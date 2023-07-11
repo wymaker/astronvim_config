@@ -1,0 +1,22 @@
+{
+  "Competitive Programming": {
+    "prefix": "cppsetup",
+    "body": [
+      "#include<bits/stdc++.h>",
+      "",
+      "using namespace std;",
+      "",
+      "#define el '\\n'",
+      "$1",
+      "int main() {",
+      "\tios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);",
+      "\t//",
+      "\t$2",
+      "\t//",
+      "\treturn 0;",
+      "}",
+      ""
+    ],
+    "description": "Competitive Programming"
+  }
+}
