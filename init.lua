@@ -8,6 +8,20 @@ return {
         require("luasnip.loaders.from_vscode").lazy_load { paths = { "./lua/user/snippets" } } -- load snippets paths
       end,
     },
+    {
+      "olimorris/onedarkpro.nvim",
+      priority = 1000,
+      config = function(plugins, opts) 
+        require("onedarkpro").setup({
+          highlights = {
+            Comment = { italic = true },
+            Directory = { bold = true },
+            ErrorMsg = { italic = true, bold = true }
+          }
+        })
+      end,
+    },
+    { "AstroNvim/astrotheme" }
   },
 
   -- Configure AstroNvim updates
@@ -29,7 +43,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "astromars",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
