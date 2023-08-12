@@ -1,29 +1,4 @@
 return {
-  -- Plugins
-  plugins = {
-    { -- Snippets
-      "L3MON4D3/LuaSnip",
-      config = function(plugin, opts)
-        require "plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
-        require("luasnip.loaders.from_vscode").lazy_load { paths = { "./lua/user/snippets" } } -- load snippets paths
-      end,
-    },
-    {
-      "olimorris/onedarkpro.nvim",
-      priority = 1000,
-      config = function(plugins, opts) 
-        require("onedarkpro").setup({
-          highlights = {
-            Comment = { italic = true },
-            Directory = { bold = true },
-            ErrorMsg = { italic = true, bold = true }
-          }
-        })
-      end,
-    },
-    { "AstroNvim/astrotheme" }
-  },
-
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use

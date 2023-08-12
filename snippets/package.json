@@ -6,10 +6,6 @@
   "contributes": {
     "snippets": [
       {
-        "language": "vue",
-        "path": "./vue.json"
-      },
-      {
         "language": "cpp",
         "path": "./cpp.json"
       }
